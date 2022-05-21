@@ -1,3 +1,16 @@
+*This project comes with another project that is called fandomJava (also in my repository)
+*To run this project locally
+*1. Download or clone fandomJava project and run it as Spring Boot Application.
+*2. Download or cload fandomReactJs project and run it by using npm.
+*3. In fandomRectJs/src/util/utils.js, change url variable value to your Spring Boot server address.
+*One more thing, fandomJava project is using MongoDB Atlas and Dropbox service to store data and files. Make sure to change MongoDB Atlas server URI and Dropbox access token for a fluent work. 
+
+Demo: https://sheerios-fandom.web.app/
+
+Features: post management, account management, sending messages...
+
+=======================================================================================================================================================================
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
