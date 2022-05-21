@@ -1,0 +1,173 @@
+.pending{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pending > div:first-child{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 1.3pc;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+}
+
+.pending > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post{
+    width: 100%;
+    padding: 5px 10px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.post > div:nth-child(2){
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.postFuncBar, .largePostFuncBar{
+    width: 100%;
+    height: 50px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 120px auto 120px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.largePostFuncBar{
+    grid-template-columns: 120px auto 120px auto 120px;
+    color: white;
+}
+
+.postFuncBar svg, .largePostFuncBar svg{
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+.postFuncBar >div:not(:last-child), .largePostFuncBar > div:not(:last-child){
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.postFuncBar >div:not(:last-child):hover, .largePostFuncBar > div:not(:last-child):hover{
+    color: orange;
+}
+
+.postFuncBar > div:nth-child(2){
+    grid-column: 3;
+}
+
+.largePostFuncBar > div:first-child{
+    grid-column: 1;
+}
+.largePostFuncBar > div:nth-child(2){
+    grid-column: 3;
+}
+.largePostFuncBar > div:nth-child(3){
+    grid-column: 5;
+}
+
+/*------------------------------------------------------------------*/
+.postHistory {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.postHistory > div:first-child{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 1.3pc;
+    color: white;
+}
+
+.hitoryList{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.postHistoryBtn{
+    width: 100%;
+}
+
+.postHistoryBtn > div{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.postHistoryBtn > div:hover{
+    color: orange;
+}
+
+.historyElement{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 5px 20px;
+}
+
+.historyElement > div:first-child{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.historyElement > div:nth-child(2){
+    word-wrap: break-word;
+}
+
+
+.postCreated {
+    color: skyblue;
+}
+
+.postApproved {
+    color: green;
+}
+
+.postLocked {
+    color: orange;
+}
+
+.postDeleted {
+    color: red;
+}
+
+.postPending {
+    color: yellow;
+}
+
+
+.hide{
+    display: none;
+}

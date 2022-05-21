@@ -1,0 +1,108 @@
+.notification{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notification > div:first-child{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 1.5pc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    color: white;
+}
+
+.notificationRow{
+    color: white;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns:5px 150px auto 100px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.notificationRow > div:first-child{
+    width: 100%;
+    height: 100%;
+}
+
+.notificationRow > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5pc;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.notificationRow > div:nth-child(2)> div:nth-child(2){
+    font-size: 0.9pc;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.notificationRow > div:nth-child(3){
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2pc;
+}
+
+.notificationRow > div:nth-child(4){
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.notificationRow > div:nth-child(4) > svg{
+    width: 20px;
+    height: 20px;
+    transition: 0.5s;
+    color: white;
+}
+
+.notification > div:nth-child(4):hover{
+    color: orange;
+}
+
+.good{
+    background-color: skyblue;
+}
+
+.bad{
+    background-color: pink;
+}
+
+.warning {
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide{
+    display: none;
+}

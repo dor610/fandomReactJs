@@ -1,0 +1,110 @@
+.basicInfo{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.basicInfo > div:first-child{
+    padding: 20px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.basicInfo > div:first-child >div:first-child{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.basicInfo  > div:first-child>div:first-child img{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.basicInfo  > div:first-child>div:first-child > div{
+    font-size: 1.3pc;
+}
+
+.basicInfo  > div:first-child>div:first-child label{
+    background-color: rgba( 255, 255, 255, 0.2);
+    display: block;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+
+.basicInfo  > div:first-child> div:nth-child(2){
+    width: calc(60% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.basicInfo  > div:first-child> div:nth-child(2) > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.basicInfo >div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.basicInfo >div:nth-child(2) > div:first-child{
+    width: 100%;
+    background-color: rgb(54,54,54);
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.3pc;
+}
+
+.basicInfo >div:nth-child(2) >div:nth-child(2){
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(calc(50% - 20px));
+    padding: 20px;
+    background-color: rgb(54,54,54);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.basicInfo >div:nth-child(2) > div:nth-child(2) >div:nth-child(odd){
+    grid-column: 1;
+}
+
+.basicInfo >div:nth-child(2) > div:nth-child(2) >div:nth-child(even){
+    grid-column: 2;
+}
+
+.basicInfo >div:nth-child(2) > div :nth-child(2) >div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.lifeAndCareer, .activities, .achievements {
+    width: 80%;
+    background-color: rgb(54,54,54);
+    height: 75vh;
+    overflow: hidden;
+    border-radius: 10px;
+}

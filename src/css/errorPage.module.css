@@ -1,0 +1,51 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #0a0f13;
+    color: white;
+    overflow: hidden;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.animation {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.animation > div:first-child{
+    height: 80%;
+}
+
+.animation > div:nth-child(2){
+    width: 100%;
+    font-size: 2pc;
+    color: pink;
+    text-align: center;
+}
+
+.navBar{
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navBar a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navBar a > div {
+    font-size: 1.5pc;
+}
+
+.navBar a > svg {
+    width: 30px;
+    height: 30px;
+}

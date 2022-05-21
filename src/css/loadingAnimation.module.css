@@ -1,0 +1,39 @@
+.loading {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hLoading{
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.loading > div:first-child {
+    width: 100px;
+    height: 100px;
+}
+
+.loading > div:nth-child(2), .hLoading > div:nth-child(2){
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.show{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}

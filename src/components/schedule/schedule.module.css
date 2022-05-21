@@ -1,0 +1,335 @@
+.minContainer{
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.minContainer > div:first-child{
+    font-size: 1.2pc;
+    color: orange;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-left: 30px;
+}
+
+.minContainer > div:last-child{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2pc;
+    transition: 0.5s;
+}
+
+.minContainer > div:last-child:hover{
+    color: orange;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.schedule > div {
+    width: 100%;
+}
+
+.schedule > div > span{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.scheduleRowMin{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 5px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "s t"
+                        "s c";
+    gap: 10px;
+}
+
+.scheduleRowMin > div:first-child{
+    grid-area: s;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 10%;
+}
+
+.scheduleRowMin >div:nth-child(2){
+    grid-area: t;
+    font-size: 1pc;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.scheduleRowMin > div:nth-child(3){
+    grid-area: c;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.upcomingMin{
+    background-color: rgba(135, 207, 235, 0.7);
+}
+
+.finishedMin {
+    background-color: rgba(255, 166, 0, 0.7);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.container > div:first-child{
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 10px 30px;
+    display: -ms-grid;
+    display: grid;
+    height: 60px;
+    line-height: 40px;
+    grid-template-columns: auto 50px 50px;
+    gap: 20px;
+}
+
+.container > div:first-child > div:first-child{
+    font-size: 1.4pc;
+}
+
+.scheduleNavBar{
+    display: flex;
+    gap: 10px;
+}
+
+.scheduleNavBar > button {
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.scheduleList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scheduleList > div:first-child{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.scheduleList > div:first-child > div:nth-child(2){
+    display: flex;
+    width: auto;
+    gap: 5px;
+}
+
+.scheduleList > div:first-child > div:nth-child(2) > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.scheduleList > div:first-child > div:nth-child(2) span{
+    font-size: 0.9vw;
+}
+
+.scheduleList > div:first-child > div:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+.scheduleList > div:first-child > div:nth-child(3) svg{
+    width: 20px;
+    height: 20px;
+}
+.scheduleList > div:first-child > div:nth-child(3):hover{
+    color: orange;
+}
+
+
+.scheduleList > div:first-child input {
+    width: 66%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.9vw;
+}
+
+.scheduleList > div:last-child{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-align: center;
+}
+.scheduleList > div:last-child:hover{
+    color: orange;
+}
+
+.scheduleRow{
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border-radius: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto 50px 10px
+}
+
+.scheduleRow > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.scheduleRow > div:first-child{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scheduleRow > div:first-child > div:first-child{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.scheduleRow > div:first-child > div:nth-child(3){
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.activeSchedulePage{
+    color: orange;
+}
+
+.finished{
+    color: orange;
+}
+
+.upcoming{
+    color: skyblue;
+}
+
+.loadBtn{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;    
+}
+
+.loadBtn:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+
+
+.scheduleCreateContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheduleCreate{
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color:rgb(54, 54, 54); 
+}
+
+.scheduleCreate > div:first-child{
+    width: 100%;
+    font-size: 1.4pc;
+    padding-bottom: 20px;
+}
+
+.scheduleCreate > div:nth-child(2) {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    grid-template-rows: 80px auto;
+    grid-template-areas: "t l"
+                        "c c";
+    gap: 10px;
+                    }
+
+
+.scheduleCreate> div:nth-child(2) > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scheduleCreate > div:nth-child(2) > div:first-child{
+    grid-area: t;
+}
+
+.scheduleCreate > div:nth-child(2) > div:nth-child(2){
+    grid-area: l;
+}
+
+.scheduleCreate> div:nth-child(2) > div:nth-child(3){
+    grid-area: c;
+} 
+
+.scheduleCreate > div:last-child{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+}
+
+.scheduleCreate > div:last-child > button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.scheduleCreate > div:last-child > button:last-child{
+    grid-column: 3;
+}
+
+.scheduleCreate > div:last-child > button:first-child:hover{
+    color: skyblue;
+}
+
+.scheduleCreate > div:last-child > button:last-child:hover{
+    color: orange;
+}
+
+
+
+.hide {
+    display: none;
+}

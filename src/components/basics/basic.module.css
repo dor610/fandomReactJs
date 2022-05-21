@@ -1,0 +1,438 @@
+/*---------------media------------------------*/
+
+.mediaViewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+}
+.videoViewer{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.fullMediaViewer{
+    margin-left: auto;
+    margin-right: auto;
+}
+.twoMedia{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.twoMedia > div{
+    width: calc(50% - 5px);
+}
+
+.multiMedia {
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+}
+
+.multiMedia > div{
+    width: calc(calc(100% / 3) - 10px);
+    height: 150px;
+}
+
+.fullsizeMedia{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fullsizeMedia > div {
+    width: 100%;
+}
+
+.multiMedia > div > img {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.videoViewer > div {
+    max-width: 100%;
+    padding-top: 10px;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+
+.mediaElement {
+    width: 100%;
+    height: 100%;
+}
+
+.mediaElement > img{
+    width: 100%;
+    height: 100%;
+}
+
+.mediaElement > video{
+    width: auto;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.mediaElement > img{
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.mediaElement > div:last-child{
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mediaDescription{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.mediaDescription > div:first-child{
+    width: 100%;
+}
+.mediaDescription > div:first-child > img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mediaDescription > div:first-child > video{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mediaDescription > div:nth-child(2){
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.showMedia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.showMedia div{
+    font-size: 1.3pc;
+}
+
+.showMedia > img, .showMedia > video {
+    max-height: 80vh;
+}
+
+
+.imgTag {
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    line-height: 30px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.imgTag > div:first-child{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.imgTag > div:first-child img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.imgTag > svg:hover{
+    color: orange;
+    cursor: pointer;
+}
+/*---------------------------------------------------*/
+
+.postForm{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    color: white;
+}
+
+.postForm > div{
+    background-color: rgb(54, 54, 54);
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    gap: 25px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.postForm > div > div:first-child{
+    font-size: 1.7pc;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.postForm > div > div:nth-child(2){
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.postForm > div > div:nth-child(2) > div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.postForm > div > div:nth-child(2) > div:last-child > div:first-child{
+    padding-left: 10px;
+}
+
+.msgElement{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.06);
+    height: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    padding: 0 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.msgElement:hover{
+    background-color: rgba(255, 255, 255, 0.12);
+    color: skyblue;
+}
+
+.msgChoosen{
+    border: 1px solid orange;
+}
+
+.postForm > div > div:nth-child(3){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+}
+
+.postForm > div > div:nth-child(3) > button{
+    width: 100px;
+    height: 40px;
+}
+
+.postForm > div > div:nth-child(3) > button:first-child{
+    color: orange;
+}
+
+.postForm > div > div:nth-child(3) > button:nth-child(2){
+    color: skyblue;
+}
+
+/*---------------------------------------------------------------*/
+.deleteForm{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    color: white;
+}
+
+.deleteForm > div{
+    width: 300px;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.deleteForm > div > div:first-child{
+    height: 50px;
+    font-size: 1.3pc;
+    line-height: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.deleteForm > div > div:nth-child(3){
+    height: 80px;
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.deleteForm > div > div:nth-child(3) >button{
+    width: 120px;
+}
+
+.deleteForm > div > div:nth-child(3) >button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.deleteForm > div > div:nth-child(3) > button:first-child{
+    color: orange;
+}
+
+.deleteForm > div > div:nth-child(3) >button:nth-child(2){
+    color: skyblue;
+}
+
+/*----------------------------------------------------------------------------------*/
+.comboBox{
+    width: 180px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.12);
+    position: relative;
+    border-radius: 10px;
+}
+
+.comboBox > div:first-child{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto 30px;
+    line-height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.comboBox >div:first-child > span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9vw;
+}
+
+.comboBoxContainer{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #0a0f13;
+    width: 100%;
+}
+
+.comboBoxOption{
+    padding-right: 30px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.comboBoxOption:hover{
+    color: orange;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.comboBoxChosenOption{
+    color: orange;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/*------------------------------------------------------------------------*/
+.confirmBox{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 6;
+}
+
+.confirmBox > div{
+    width: 35vmax;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(54,54,54);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2pc;
+}
+.confirmBox > div > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.confirmBox > div > div:nth-child(2) > button{
+    width: 30%;
+    font-size: 1.1pc;
+}
+
+.confirmBox > div > div:nth-child(2) > button:first-child{
+    color: skyblue;
+}
+
+.confirmBox > div > div:nth-child(2) > button:nth-child(2){
+    color: pink;
+}
+
+
+
+
+
+.hide{
+    display: none;  
+}

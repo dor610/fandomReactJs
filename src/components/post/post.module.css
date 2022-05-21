@@ -1,0 +1,354 @@
+.postView {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.postView > div:last-child {
+    width: 100%;
+    height: 200px;
+}
+
+.postHeader {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255,255,255, 0.07);
+    border-radius: 10px;
+    display: -ms-grid;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto 150px;
+}
+
+.postHeader > div {
+    font-size: 1.5pc;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+
+.postHeader > a, .postHeader > button { 
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.12);
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.postHeader > a:hover{
+    background-color: rgba(255,255,255, 0.1);
+}
+
+.post {
+    background-color: rgba(255,255,255, 0.06);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post > a{
+    color: white;
+}
+
+.post > a > div > div:first-child{
+    color: white;
+}
+
+.post > a > div > div:nth-child(2){
+    color: rgba(255,255,255, 0.7);
+}
+
+
+
+
+.postTitle {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 50px auto 130px;
+    padding-left: 20px;
+    color: white;
+    padding-right: 10px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.postTitle > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: block;
+    margin-top: 10px;
+    line-height: 0;
+}
+
+.postTitle > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 1.4pc;
+}
+
+.postTitle > div:nth-child(3){
+    color: rgba(255,255,255, 0.7);
+}
+
+.postTitle > div:nth-child(2) > div > svg{
+    width: 30px;
+    height: 20px;
+    display: block;
+    margin-top: 15px;
+    color: skyblue;
+}
+
+.postContent {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.postContent > div:first-child, .postContent > a:first-child div{
+    font-weight: bold;
+    font-size: 1.3pc;
+    color: white;
+}
+
+.postContent > div:nth-child(2){
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.postContent a:hover{
+    color: rgba(255,255,255, 0.8);
+}
+
+.postFuncBar svg{
+    width: 30px;
+    height: 25px;
+    transition: 0.5s;
+}
+
+.postFuncBar svg:hover{
+    color: pink;
+}
+
+.postFuncBar {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 80px 80px auto  50px 50px;    
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.postFuncBar > div:not(:first-child, :nth-child(2)) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.postFuncBar > div:nth-child(6) {
+    margin-right: 0;
+    margin-left: auto;
+    transition: 0.5s;
+}
+
+.postFuncBar > div:nth-child(7){
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.postFuncBar > div:not(:first-child, :nth-child(2))  > svg {
+    width: 30px;
+    height: 25px;
+    margin-top: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.postFuncBar > button:hover {
+    background-color: pink;
+}
+
+.postFuncBar a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.postFuncBar a svg{
+    width: 30px;
+    height: 25px;
+}
+
+.commentFuncBar svg {
+    width: 15px;
+    height: 15px;
+}
+
+.subPostFuncBar{
+    display: -ms-grid;
+    padding: 0 30px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto 150px;
+}
+
+.subPostFuncBar svg{
+    width: 30px;
+    height: 25px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.subPostFuncBar > div:not(:first-child){
+    display: flex;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.subPostFuncBar > div:nth-child(2) svg:hover {
+    color: skyblue;
+}
+
+.subPostFuncBar > div:nth-child(3) svg:hover{
+    color: orange;
+}
+
+.upVote svg:hover{
+    color: skyblue;  
+}
+
+.upVoteActive {
+    color: pink;
+}
+
+.downVote svg:hover{
+    color: orange;
+}
+
+.downVoteActive {
+    color: orange;
+}
+
+.comment svg:hover{
+    color:rgba(255,255,255, 0.5);
+}
+
+/*-------------------------------------------------------------------------------*/
+
+.postEdit{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.postCreateFunc {
+    display: flex;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255,255,255, 0.06);
+    border-radius: 10px;
+    color: white;
+    gap: 20px;
+}
+
+.postCreateFunc > button{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 30px auto;
+    gap: 10px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.postCreateFunc > button > svg{
+    width: 25px;
+    height: 25px;
+    margin-top: 7.5px;
+}
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(255,255,255, 0.06);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.formElement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formElement > label{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255,255,255, 0.12);
+    border-radius: 10px;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+.mediaContainer{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 20px;
+}
+/*----------------------------------------------------------------------*/
+
+
+.header1{
+    background-color: #24293d;
+    color: white;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto 50px;
+    padding: 10px 20px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.header1 > div {
+    font-size: 1.4pc;
+    line-height: 40px;
+}
+
+.header1 > a > button{
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.activeBtn{
+    background-color: rgba(255,255,255, 0.1);
+    color: orange;
+}

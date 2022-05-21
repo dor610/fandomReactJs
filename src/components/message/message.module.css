@@ -1,0 +1,249 @@
+.messageList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.messageList a:hover{
+    color: white;
+}
+
+.messageList > div:first-child{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5pc;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+.messageList > div:nth-child(2) > div:first-child{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.messageList > div:nth-child(2) > div:first-child > div:first-child{
+    width: 100%;
+    font-size: 1.2pc;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.messageListRow{
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 300px auto;
+    gap: 20px;
+}
+
+.messageListRow > div:first-child{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 5px auto;
+    gap: 20px;
+}
+
+.messageListRow > div:first-child > div:nth-child(2){
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding-right: 15px;
+}
+
+.messageListRow > div:first-child > div:nth-child(2) > a{
+    font-size: 1.2pc;
+}
+
+.messageListRow > div:first-child > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.messageListRow  > a {
+    display: flex;
+    align-items: center;
+    font-size: 1.1pc;
+}
+/*---------------------------------------------------------------*/
+.userChat {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    height: calc(100vh - 140px);
+}
+
+.userChat > div:nth-child(2){
+    width: 100%;
+    position: absolute;
+    max-height: calc(100vh - 470px);
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    top: 80px;
+}
+
+.userChat > div:nth-child(2)::-webkit-scrollbar {
+    display: none;
+}
+
+.userChat > div:nth-child(2) > div:first-child{
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3pc;
+    text-align: center;
+    word-wrap: break-word;
+    color: lightgray;
+}
+
+.chatHeader{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 50px auto 150px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 60px;
+    line-height: 60px;
+    align-items: center;
+    gap: 20px;
+}
+
+.chatHeader > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.chatInput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-top: 10px;
+    gap: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 60px);
+}
+.chatInput >div:first-child{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: -40px;
+}
+
+.chatInput svg{
+    width: 20px;
+    height: 20px;
+}
+
+.chatInput >div:nth-child(3)> div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.chatInput > div:nth-child(3) {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+}
+
+.chatInput > div:nth-child(3) > button {
+    grid-column: 3;
+}
+
+.chatInput > div:nth-child(3) label{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.chatInput > div:nth-child(3) label:hover{
+    color: orange;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatContent {
+    width: 100%;
+}
+
+.chatContent > div {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.chatContent > div > div:first-child{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+
+.chatContent > div > div:last-child{
+    width: 150px;
+    font-size: 0.9pc;
+}
+
+.receive {
+    float: left;
+    align-items: flex-start;
+}
+.receive > div:first-child{
+    border-radius: 10px 10px 10px 0;
+}
+
+.send {
+    float: right;
+    align-items: flex-end;
+}
+
+.send > div:first-child{
+    background-color: rgba(135, 207, 235, 0.4) !important;
+}
+
+.send > div:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.send > div:first-child{
+    border-radius: 10px 0 10px 10px;
+}
+
+.send img, .receive img{
+    max-height: 300px;
+}
+
+.hide {
+    display: none;
+}

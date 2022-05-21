@@ -1,0 +1,171 @@
+.loginPage{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: #0a0f13;
+    color: white;
+    grid-template-columns: auto 50%;
+}
+
+.logoSection {
+    color: white;
+}
+
+.logoSection > div{
+    margin-top: 20vh;
+    padding-left: 5vh;
+    max-height: 130px;
+    cursor: pointer;
+}
+.logoSection > div > svg{
+    max-height: 120px;
+}
+
+.form{
+    margin-top: 10vh;
+    width: 60%;
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    min-height: 380px;
+    padding: 40px;
+}
+
+.form a{
+    color: skyblue;
+}
+
+.form a:hover{
+    color: orange;
+}
+
+.loginForm , .signupForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+.loginForm > div, .signupForm > div{
+    width: 100%;
+}
+
+.form input{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.form button{
+    width: 200px;
+}
+
+.form > div:last-child{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.form > div:last-child > span:last-child{
+    color: deepskyblue;
+    cursor: pointer;
+}
+
+.form > div:last-child > span:last-child:hover{
+    color: skyblue;
+}
+
+
+.name{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+.rememberMe {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.checkBox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 45px;
+}
+  
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+  
+/* Creating a custom checkbox
+based on demand */
+.checkMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+  
+/* Specify the background color to be
+shown when hovering over checkbox */
+.checkBox:hover input ~ .checkMark {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+  
+/* Specify the background color to be
+shown when checkbox is active */
+.checkBox input:active ~ .checkMark {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+  
+/* Specify the background color to be
+shown when checkbox is checked */
+.checkBox input:checked ~ .checkMark {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+  
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.checkMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Display checkmark when checked */
+.checkBox input:checked ~ .checkMark:after {
+    display: block;
+}
+  
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.checkBox .checkMark:after {
+    left: 8px;
+    bottom: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid orange;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

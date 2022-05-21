@@ -1,0 +1,266 @@
+.containerMin{
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    color: white;
+}
+
+.containerMin > div:first-child{
+    font-size: 1.2pc;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-left: 30px;
+    color: orange;
+}
+
+.profileMin {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    gap: 30px;
+    word-wrap: break-word;
+}
+
+.profileMin > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profileMin > div:first-child > div:first-child{
+    width: 80%;
+    max-height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profileMin > div:first-child > div:nth-child(2) {
+    font-size: 1.5pc;
+}
+
+.profileMin > div:not(:first-child, :last-child) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding-left: 10%;
+}
+
+.profileMin > div:not(:first-child, :last-child) > a{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profileMin > div:not(:first-child, :last-child) > a > div{
+    font-size: 1.1pc
+}
+
+.profileMin > div:not(:first-child, :last-child) > a > svg{
+    width: 25px;
+    height: 25px;
+    transition: 0.5s;
+}
+
+.profileMin > div:not(:first-child, :last-child) > a:hover > svg{
+    color: orange;
+}
+
+.profileMin > div:last-child {
+    width: 100%;
+    font-size: 1.1pc;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.profileMin > div:last-child:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.profileMin a:hover{
+    color: orange;
+}
+
+/*--------------------------------------------------*/
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    color: white;
+}
+
+.profile > div:first-child{
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 10px 30px;
+    display: -ms-grid;
+    display: grid;
+    height: 60px;
+    line-height: 40px;
+    grid-template-columns: auto 50px;
+}
+
+.profile > div:first-child > div:first-child{
+    font-size: 1.4pc;
+}
+
+.profileNavBar {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto 130px;
+    width: 100%;
+}
+
+.profileNavBar > div:first-child{
+    display: flex;
+    gap: 10px;
+}
+
+.profileNavBar > button:nth-child(2){
+    display: flex;
+    gap:10px
+}
+
+.profileNavBar button{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    font-size: 1.1pc;
+}
+
+.activeBtn{
+    color: orange;
+}
+
+/*-------------------------------------------------------*/
+.basicInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.basicInfo >div:first-child{
+    width: 40%;
+}
+
+.basicInfo > div:nth-child(2){
+    width: calc(60% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2pc;
+}
+
+.basicInfo > div:nth-child(2) > div:first-child{
+    font-size: 2.5pc;
+}
+
+.basicInfo > div:nth-child(2) > div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 5%;
+    gap: 30px;
+}
+
+.basicInfo > div:nth-child(2) > div:last-child div:nth-child(2){
+    display: flex;
+    gap: 15px;
+}
+
+.basicInfo > div:nth-child(2) > div:last-child div:nth-child(2) svg{
+    width: 25px;
+    height: 25px;
+    transition: 0.5s;
+}
+
+
+.basicInfo > div:nth-child(2) > div:not(:first-child, :last-child){
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 10px;
+}
+/*------------------------------------------------------------------------------------------------*/
+.lifeAndCareer, .activities, .achievements{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+.editProfile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.editProfile >div:first-child{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.editProfile >div:first-child  >div:first-child{
+    background-color: rgb(54,54,54);
+    font-size: 1.3pc;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.editProfile >div:first-child  >div:last-child{
+    width: 80%;
+    display: flex;
+    gap: 30%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(54,54,54);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.editProfile >div  >div:last-child > button{
+    width: 150px;
+    font-size: 1.1pc;
+}
+
+
+
+
+
+.hide {
+    display: none;
+}
