@@ -4,7 +4,7 @@
 
 *1. Download or clone fandomJava project and run it as Spring Boot Application.*
 
-*2. Download or cload fandomReactJs project and run it by using npm.*
+*2. Download or clone fandomReactJs project and run it by using npm.*
 
 *3. In fandomRectJs/src/util/utils.js, change url variable value to your Spring Boot server address.*
 
